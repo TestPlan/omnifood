@@ -147,7 +147,7 @@ $(document).ready(function () {
         lng: -75.004976,
         title: 'Maple Shade, NJ',
         infoWindow: {
-            content: '<p>If you would like me to work on your website, contact me using the form or email me at:<br><strong>ianmarkind@gmail.com</strong></p>'
+            content: '<p class="map-message">If you would like me to work on your website, contact me at:<br><strong><a href="mailto:ianmarkind@gmail.com?subject=Website%20Inquiry&body=%0D%0A%0D%0A-- referred from Omnifood" target="_top">ianmarkind@gmail.com</a></strong></p>'
         }
     });
 });
