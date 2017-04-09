@@ -6,7 +6,7 @@ $(document).ready(function () {
     var $icon = $('.js--nav-icon i');
     var $nav = $('nav');
     var mobileBreakpoint = 767;
-    var map;
+    var map, lng;
 
 
     // STICKY NAV
@@ -128,17 +128,23 @@ $(document).ready(function () {
         }
     });
 
+    if ($(window).width() > mobileBreakpoint) {
+        lng = -74.6;
+    } else {
+        lng = -75.15;
+    }
+
     // GOOGLE MAP
     map = new GMaps({
         div: '.map',
         lat: 39.9499596,
-        lng: -75.0104976,
+        lng: lng,
         zoom: 10
     });
 
     map.addMarker({
         lat: 39.9499596,
-        lng: -75.0104976,
+        lng: -75.004976,
         title: 'Maple Shade, NJ',
         infoWindow: {
             content: '<p>If you would like me to work on your website, contact me using the form or email me at:<br><strong>ianmarkind@gmail.com</strong></p>'
